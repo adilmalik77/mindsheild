@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomRight,
             colors: [
-              UColors.primary_800, // Teal
+              UColors.primary_600, // Teal
               UColors.secondary, // White
             ],
             stops: [0.1, 0.6], // End > Begin Point
