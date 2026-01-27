@@ -58,6 +58,4 @@ class UTexts {
   static const String signIn = "Sign In";
   static const String createAccount = "Create Account";
   static const String orSignInWith = "Or Sign In With";
-
-  
 }
