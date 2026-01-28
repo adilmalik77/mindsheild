@@ -3,6 +3,7 @@ import 'package:iconsax/iconsax.dart';
 // import 'package:mindshield/features/screens/allowNotification/allow_notification.dart';
 import 'package:mindshield/Utilities/constants/sizes.dart';
 import 'package:mindshield/Utilities/constants/texts.dart';
+import 'package:mindshield/common/widgets/button/rounded_rectangle_forward_elevated_button.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key, required this.image, required this.title});
@@ -61,6 +62,34 @@ class LoginPage extends StatelessWidget {
               suffixIcon: Icon(Iconsax.eye),
             ),
           ),
+
+          //         Row
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Checkbox(value: true, onChanged: (value) {}),
+                  Text(UTexts.rememberMe),
+                ],
+              ),
+
+              //  Forget Password
+              TextButton(
+                onPressed: () {},
+                child: Text(UTexts.forgetPassword),
+              ),
+
+            ],
+          ),
+          
+          SizedBox(height: USizes.spaceBtwSections,),
+          // SignIn
+          UElevatedButton(onPressed: (){}, child: Text(UTexts.signIn)),
+          SizedBox(height: USizes.spaceBtwItems/2,),
+          // Create Account Button
+          UElevatedButton(onPressed: (){}, child: Text(UTexts.createAccount))
+
 
           /***************
           * DIVIDER PART *
